@@ -1,0 +1,13 @@
+<!DOCTYPE >
+<html>
+	<head>
+		<title>CA List</title>
+	</head>
+	<body>
+		<ul>
+			{% for ca in calist %}
+			<li><a href="/ca/{{ca.commonName}}">{{ca.commonName}}</a></li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>
