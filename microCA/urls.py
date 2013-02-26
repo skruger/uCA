@@ -11,6 +11,12 @@ urlpatterns = patterns('',
     url(r'^ca$', 'coreCA.views.cacert'),
     url(r'^ca/(.*)$', 'coreCA.views.cacert'),
     url(r'^keycertchain/(.*)$', 'coreCA.views.keycertchain'),
+    
+    url(r'^key/(.*)$', 'coreCA.views.key'),
+    url(r'^cert/(.*)$', 'coreCA.views.cert'),
+    url(r'^chain/(.*)$', 'coreCA.views.chain'),
+
+
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
